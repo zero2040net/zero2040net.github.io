@@ -1,108 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<title>zero2040.net</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>zero2040.net</title>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-
-body {
-  margin: 0;
-  font-family: 'Space Mono', monospace;
-  background-color: hsl(120, 100%, 98%);
-}
-  
-  <style>
-body {
-  color: blue;
-}
-h1 {
-  font-family: 'Space Mono', monospace;
-  letter-spacing: 2px;
-  color: black;
-  font-size: 30px
-}
-h2 {
-  color: #ff0000;
-  font-size: 40px;
-}
-p1 {
-  font-family: 'Space Mono', monospace;
-  font-size: 20px;
-  }
-p2 {
-  font-family: 'Space Mono', monospace;
-  font-size: 10px;
-  }
-p3 {
-  font-family: 'Space Mono', monospace;
-  font-size: 60px;
-  }
-p4 {
-  font-family: 'Space Mono', monospace;
-  font-size: 70px;
-  }
-figcaption {
-  font-family: 'Space Mono', monospace;
-  font-size: 10px;
-  hyphens: auto; 
-  }
-</style>
 </head>
+  <style>
+    
+.accordion {
+  background-color: #f5fff5;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #f5fff5; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #f5fff5;
+  overflow: show;
+}
+
+  .accordion:after {
+  content: '▼';
+  color: #000000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "▲";
+}
+    
+  </style>
+<header>
+
+	<div class="container">
+
+		<div class="profile">
+
+			<div class="profile-image">
+
+				<img src="ZEL.png" alt="Zero Ecosystems Lab">
+
+			</div>
+
+			<div class="profile-user-settings">
+
+				<h1 class="profile-user-name">zero2030.net</h1>
+
+				<button class="btn profile-edit-btn">by Zero Ecosystems Lab (ZEL)</button>
+
+				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+
+			</div>
+
+			<div class="profile-stats">
+
+				<ul>
+					<li><a href="https://zero2030.net" target="_blank"><span class="profile-stat-count"><img src="ZEL.png" alt="Zero Ecosystems Lab icon" width="40" height="40">
+</span> 2030</a></li>
+					<li><a href="https://zero2040.net" target="_blank"><span class="profile-stat-count"><img src="ZEL.png" alt="Zero Ecosystems Lab icon" width="40" height="40"></span> 2040</a></li>
+					<li><a href="https://zero2050.net" target="_blank"><span class="profile-stat-count"><img src="ZEL.png" alt="Zero Ecosystems Lab icon" width="40" height="40"></span> 2050</a></li>
+				</ul>
+			</div>
+
+			<div class="profile-bio">
+
+				<p4 id="demo"></p4>
+
+			</div>
+
+		</div>
+		<!-- End of profile section -->
+
+	</div>
+	<!-- End of container -->
+
+</header>
+
+
+</main>
 <body>
-
-<div class="sidenav">
-  <a href="https://is.zero2040.net"><img src="/flags/is.png" alt="Avatar" class="avatar-small"></a>
-    <figcaption>Iceland</figcaption>
-
-</div>
-
-<div class="content">
   <br>
-  <br>
-  <br>
-  <br>
-  <p4 id="demo"></p4>
-  <br>
-  <br>
-    <iframe allowfullscreen="false" data-src="https://audio.beyondwords.io/e/3692273" frameborder="0" id="speechkit-io-iframe" scrolling="no" style="display: none"></iframe><script src="https://proxy.beyondwords.io/npm/@beyondwords/audio-player@latest/dist/module/iframe-helper.js" type="text/javascript"></script>
-  <br>
-  <h1>Paris Agreement</h1>
-  <br>
-  <p2>Pursue efforts to limit temperature increase to</p2>
-  <br>
-  <p4>1.5°C</p4>
-  <br>
-  <p2>Keep global temperature rise this century well below</p2>
-  <br>
-  <p4>2°C</p4>
-  <br>
-  <br>
-  <p2><a href="https://unfccc.int/files/essential_background/convention/application/pdf/arabic_paris_agreement.pdf" target="_blank">Arabic</a></p2>
-  <p2><a href="https://unfccc.int/files/essential_background/convention/application/pdf/chinese_paris_agreement.pdf" target="_blank">Chinese</a></p2>
-  <p2><a href="https://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf" target="_blank">English</a></p2>
-  <p2><a href="https://unfccc.int/files/essential_background/convention/application/pdf/french_paris_agreement.pdf" target="_blank">French</a></p2>
-  <p2><a href="https://unfccc.int/files/essential_background/convention/application/pdf/russian_paris_agreement.pdf" target="_blank">Russian</a></p2>
-  <p2><a href="https://unfccc.int/files/essential_background/convention/application/pdf/spanish_paris_agreement.pdf" target="_blank">Spanish</a></p2>
+<p2><strong>ZEL</strong> was founded in 2019 as the most intuitive way to find environmental information on the internet. Now we’re a whole bunch of communication tools that aim to make net zero accessible—doing our bit for the planet along the way. </p2>
+<br>
+<br>
+  <button class="accordion"><h1 id="WhatIsNetZero">What is Net zero?</h1></button>
+  <div class="panel">
+  <p2>Net zero refers to a state in which the greenhouse gases going into the atmosphere are balanced by removal out of the atmosphere.</p2>
+<br>
+<br>
+  <p2>The term Net zero is important because – for CO2 at least – this is the state at which global warming stops. The Paris Agreement underlines the need for Net zero, requiring states to ‘achieve a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases in the second half of this century’.</p2>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <script>
+<br>
+  <button class="accordion"><h1 id="WhyNetZero">Why Net zero?</h1></button>
+  <div class="panel">
+  <p2>Net zero is the internationally agreed upon goal for mitigating global warming in the second half of the century, and the IPCC concluded the need for Net zero CO2 by 2050 to remain consistent with 1.5C – the purpose of this site is to inform effective climate action that is Net zero aligned in order to advance progress towards this goal.</p2>
+  <p2></p2>
+  </div>
+<br>
+  <button class="accordion"><h1 id="WhyNetZero">How do we get to Net zero?</h1></button>
+  <div class="panel">
+  <p2>Many actors will be able to achieve absolute zero or zero emissions in the process of reaching Net zero. Others will need to scale up removals either themselves directly or by supporting other project, hence the ‘Net’ in Net zero.</p2>
+  <p2></p2>
+  </div>
+<br>
+<br>
+<div id="banner">
+    <h2>Do you influence positive change?</h2><a href="mailto:hello@zro.ec" id="download"><h2>Click here</h2></a>
+  <h2>Have you got a story about creativity that you want to pitch to us? Or a project that you think we need to know about? Well then, we want to hear from you. Submit your ideas to feature here!</h2>
+</div>
+<br>
+<br>
+<h1>Explore</h1>
+<br>
+<br>
+			<div class="profile-stats">
+
+				<ul>
+					<li><a href="https://is.zero2040.net" target="_blank"><span class="profile-stat-count"><img src="is.png" alt="Iceland flag" width="40" height="40"></span>Uruguay</a></li>
+				</ul>
+
+			</div>
+<br>
+<br>
+<script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -152,51 +192,17 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-  
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-<div class="above-footer">
-     <div class="row">
-  <div class="column2">
-    <p><a href="https://zero2030.net"> <img src="zroec.png" alt="2030" class="avatar"> </a></p>
-    <figcaption>2 0 3 0</figcaption>
+  <script src="script.js"></script>
+</body>
   </div>
-  <div class="column2">
-    <p><a href="https://zero2040.net"> <img src="zroec.png" alt="2040" class="avatar"> </a></p>
-    <figcaption>2 0 4 0</figcaption>
-  </div>
-  <div class="column2">
-    <p><a href="https://zero2050.net"> <img src="zroec.png" alt="2050" class="avatar"> </a></p>
-    <figcaption>2 0 5 0</figcaption>
-  </div>
- <br>
-  <p1><a href="https://zrO.ec" target="_blank">zrO.ec</a></p1>
-  <br>
-  <img src="favicon.png"
-      width="25px";
-      height="25px">
- <p2> Created in Liverpool </p2>
- <br>
+<br>
+<br>
+<h1><center><a href="mailto:hello@zro.ec">Contact Us</a></center></h1>
+<br>
+<br>
+ <div class="footer">
+ <p1> Zero Ecosystem is a not for profit company limited by guarantee (Company No. 13349586) registered in England, United Kingdom </p1>
 </div>
 
-</body>
 </html>
