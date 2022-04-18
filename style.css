@@ -385,7 +385,7 @@ h1 {
   font-size: 30px
 }
 h2 {
-  color: #00ff15;
+  color: #101010;
   font-size: 20px;
 }
 p1 {
@@ -435,7 +435,6 @@ a#download {
     width: 150px;
     margin: 0px auto;
     padding: 20px;
-    font-color: #101010;
     font-family: 'Space Mono', monospace;
     border: 1px solid #101010;
     text-decoration: none;
