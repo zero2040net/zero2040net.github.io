@@ -435,9 +435,9 @@ a#download {
     width: 150px;
     margin: 0px auto;
     padding: 20px;
-    color: #101010;
+    font-color: #101010;
     font-family: 'Space Mono', monospace;
-    border: 1px solid hsl(120, 100%, 98%);
+    border: #101010;
     text-decoration: none;
     border-radius: 10px;
 }
